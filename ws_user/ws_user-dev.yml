@@ -28,4 +28,4 @@ eureka:
       
 some:
   random:
-    property: value1
+    property: value2
