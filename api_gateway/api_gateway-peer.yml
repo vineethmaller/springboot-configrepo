@@ -9,7 +9,7 @@ spring:
     username: ${RABBITMQ_USER}
     password: ${RABBITMQ_PASS}
 server:
-  port: 8085
+  port: ${PORT:8085}
 
 
 eureka:
@@ -20,4 +20,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://localhost:8081/eureka/,http://localhost:8082/eureka/,http://localhost:8083/eureka/
+      defaultZone: http://localhost:8081/eureka/
