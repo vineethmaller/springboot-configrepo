@@ -1,6 +1,6 @@
 ---
 spring:
-  profiles: peer1
+  profiles: peer
   application: 
     name: api_gateway
   rabbitmq:
