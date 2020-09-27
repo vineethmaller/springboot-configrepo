@@ -1,0 +1,17 @@
+---
+spring:
+  profiles: peer
+  application: 
+    name: ws_discovery
+server:
+  port: ${PORT:8081}
+
+
+eureka:
+  instance:
+    hostname: ${spring.application.name}-${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:${PORT-1:8081}/eureka/
