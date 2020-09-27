@@ -3,6 +3,11 @@ spring:
   profiles: peer
   application: 
     name: ws_discovery
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: ${RABBITMQ_USER}
+    password: ${RABBITMQ_PASS}
 server:
   port: ${PORT:8081}
 
