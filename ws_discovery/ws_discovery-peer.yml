@@ -16,7 +16,6 @@ eureka:
   instance:
     hostname: ${spring.application.name}-${server.port}
   client:
-    enabled: false
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
